@@ -1,0 +1,124 @@
+h1,h2,h3,h4,h5{
+    font-family: "Young Serif", serif;
+}
+p{
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --pesto: rgb(108,125,54);
+    --husk: rgb(183,162,94);
+    --ink: rgb(40,45,40);
+    --sage: rgb(150,160,150);
+}
+/* Classe testi */
+.txt-pesto{
+    color:var(--pesto);
+}
+.txt-husk{
+    color:var(--husk);
+}
+.txt-ink{
+    color:var(--ink);
+}
+.txt-sage{
+    color:var(--sage);
+}
+/* Classe background */
+.bg-pesto{
+    color:var(--pesto);
+}
+.bg-husk{
+    color:var(--husk);
+}
+.bg-ink{
+    color:var(--ink);
+}
+.bg-sage{
+    color:var(--sage);
+}
+.nav-bar{
+    height:80px;
+    background: var(--pesto);
+    width: 100%;
+    z-index:999;
+    position:fixed;
+    top:0;
+
+}
+.button-search{
+    width:50%;
+}
+.img-logo{
+    height:90px;
+    width:90px;
+}
+.nav-link{
+    color:var(--ink)
+
+}
+
+
+/* Video header startboostrap */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+.first-section{
+    height: 90vh;
+    background: linear-gradient(rgba(183,162,94,0.5), rgba(183,162,94,0.5)), url("./media-moda/bgsection1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-section1{
+    height:450px;
+}

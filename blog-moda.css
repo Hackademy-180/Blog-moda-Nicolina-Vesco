@@ -38,7 +38,7 @@ p{
 }
 .nav-bar{
     height:80px;
-    background: var(--pesto);
+    background: var(--sage);
     width: 100%;
     z-index:999;
     position:fixed;
@@ -62,7 +62,7 @@ p{
 header {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -115,10 +115,23 @@ header .overlay {
 
 .first-section{
     height: 90vh;
-    background: linear-gradient(rgba(183,162,94,0.5), rgba(183,162,94,0.5)), url("./media-moda/bgsection1.jpg");
+    background: linear-gradient(rgba(150,160,150, 0.5), rgba(150,160,150,0.5)), url("./media-moda/bgsection1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .img-section1{
     height:450px;
+}
+
+/* Second section */
+.card{
+    width: 20%;
+    height: 20%;
+}
+.img-section-2{
+    width:300px;
+    height:500px;
+}
+.second-section{
+    padding:30px;
 }

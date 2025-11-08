@@ -1,3 +1,7 @@
+body{
+    background: var(--sage);
+}
+
 h1,h2,h3,h4,h5{
     font-family: "Young Serif", serif;
 }
@@ -36,6 +40,7 @@ p{
 .bg-sage{
     color:var(--sage);
 }
+/* Barra di navigazione */
 .nav-bar{
     height:80px;
     background: var(--sage);
@@ -45,6 +50,13 @@ p{
     top:0;
 
 }
+.nav-link{
+    transition: 0.9s;
+}
+.nav-link:hover{
+    transform: translateY(-10px);
+}
+
 .button-search{
     width:50%;
 }
@@ -130,8 +142,51 @@ header .overlay {
 }
 .img-section-2{
     width:300px;
-    height:500px;
+    height:450px;
 }
 .second-section{
     padding:30px;
+}
+.card{
+    transition:0.5s;
+}
+.card:hover{
+    transform: translateY(-5px);
+}
+.button-men{
+    background: var(--pesto);
+}
+
+/* Carousel */
+.carousel-caption{
+    background: linear-gradient(rgba(40,45,40,0.5), rgba(40,45,40,0.5));
+}
+.img-carousel{
+    transition:0.9s;
+}
+.img-carousel:hover{
+    transform:scale(1.1);
+}
+
+/* Footer */
+.row-footer{
+    min-height: 60vh;
+    width: 100%;
+    margin:0px;
+    background: var(--sage);
+}
+.footer-list{
+    list-style-type: none;
+}
+.last-paragraph{
+    font-size:12px;
+}
+.first-column, .second-column, .third-column{
+    border-right:1px solid rgb(119, 118, 118);
+}
+.second-column,.third-column{
+    height:288px;
+}
+.social-icon, .copyright{
+    border-top: 1px solid rgb(119, 118, 118);
 }
